@@ -1,20 +1,19 @@
 //
-//  UITableViewHeaderFooterView+RACSignalSupport.h
+//  UITableViewCell+RACSignalSupport.h
 //  ReactiveObjC
 //
-//  Created by Syo Ikeda on 12/30/13.
+//  Created by Justin Spahr-Summers on 2013-07-22.
 //  Copyright (c) 2013 GitHub, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ReactiveObjCDefines.h"
 
 @class RACSignal<__covariant ValueType>;
 @class RACUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
-// This category is only applicable to iOS >= 6.0.
-@interface UITableViewHeaderFooterView (RACSignalSupport)
+@interface UITableViewCell (RACSignalSupport)
 
 /// A signal which will send a RACUnit whenever -prepareForReuse is invoked upon
 /// the receiver.

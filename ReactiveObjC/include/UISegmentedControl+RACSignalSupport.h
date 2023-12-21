@@ -6,7 +6,7 @@
 //  Copyright (c) 2013 GitHub, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ReactiveObjCDefines.h"
 
 @class RACChannelTerminal<ValueType>;
 

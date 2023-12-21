@@ -1,20 +1,20 @@
 //
-//  UICollectionReusableView+RACSignalSupport.h
+//  MKAnnotationView+RACSignalSupport.h
 //  ReactiveObjC
 //
-//  Created by Kent Wong on 2013-10-04.
-//  Copyright (c) 2013 GitHub, Inc. All rights reserved.
+//  Created by Zak Remer on 3/31/15.
+//  Copyright (c) 2015 GitHub. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ReactiveObjCDefines.h"
+#import <MapKit/MapKit.h>
 
 @class RACSignal<__covariant ValueType>;
 @class RACUnit;
 
 NS_ASSUME_NONNULL_BEGIN
 
-// This category is only applicable to iOS >= 6.0.
-@interface UICollectionReusableView (RACSignalSupport)
+@interface MKAnnotationView (RACSignalSupport)
 
 /// A signal which will send a RACUnit whenever -prepareForReuse is invoked upon
 /// the receiver.

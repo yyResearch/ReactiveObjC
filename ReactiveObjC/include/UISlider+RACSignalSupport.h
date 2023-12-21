@@ -1,18 +1,17 @@
 //
-//  UIStepper+RACSignalSupport.h
+//  UISlider+RACSignalSupport.h
 //  ReactiveObjC
 //
 //  Created by Uri Baghin on 20/07/2013.
 //  Copyright (c) 2013 GitHub, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
-
+#import "ReactiveObjCDefines.h"
 @class RACChannelTerminal<ValueType>;
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface UIStepper (RACSignalSupport)
+@interface UISlider (RACSignalSupport)
 
 /// Creates a new RACChannel-based binding to the receiver.
 ///

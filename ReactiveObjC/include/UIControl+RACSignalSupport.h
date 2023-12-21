@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 GitHub, Inc. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ReactiveObjCDefines.h"
 
 @class RACSignal<__covariant ValueType>;
 

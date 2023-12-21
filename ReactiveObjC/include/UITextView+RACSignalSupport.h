@@ -6,7 +6,7 @@
 //  Copyright (c) 2012 Cody Krieger. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import "ReactiveObjCDefines.h"
 
 @class RACDelegateProxy;
 @class RACSignal<__covariant ValueType>;

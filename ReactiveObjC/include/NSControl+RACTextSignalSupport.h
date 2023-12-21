@@ -6,7 +6,11 @@
 //  Copyright (c) 2013 GitHub, Inc. All rights reserved.
 //
 
-#import <Cocoa/Cocoa.h>
+#import "ReactiveObjCDefines.h"
+
+#if TARGET_OS_WATCH
+#elif TARGET_OS_IOS || TARGET_OS_TV
+#elif TARGET_OS_MAC
 
 @class RACSignal<__covariant ValueType>;
 
@@ -26,3 +30,5 @@ NS_ASSUME_NONNULL_BEGIN
 @end
 
 NS_ASSUME_NONNULL_END
+
+#endif

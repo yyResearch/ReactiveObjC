@@ -7,6 +7,11 @@
 //
 
 #import "NSControl+RACCommandSupport.h"
+
+#if TARGET_OS_WATCH
+#elif TARGET_OS_IOS || TARGET_OS_TV
+#elif TARGET_OS_MAC
+
 #import "RACCommand.h"
 #import "RACScopedDisposable.h"
 #import "RACSignal+Operations.h"
@@ -55,3 +60,5 @@ static void *NSControlEnabledDisposableKey = &NSControlEnabledDisposableKey;
 }
 
 @end
+
+#endif

@@ -7,7 +7,12 @@
 //
 
 #import "NSText+RACSignalSupport.h"
-#import <ReactiveObjC/EXTScope.h>
+
+#if TARGET_OS_WATCH
+#elif TARGET_OS_IOS || TARGET_OS_TV
+#elif TARGET_OS_MAC
+
+#import "EXTScope.h"
 #import "NSObject+RACDescription.h"
 #import "RACDisposable.h"
 #import "RACSignal.h"
@@ -36,3 +41,5 @@
 }
 
 @end
+
+#endif
