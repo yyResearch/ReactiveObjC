@@ -23,7 +23,8 @@ let package = Package(
         .target(
             name: "ReactiveObjCSwift",
             dependencies: ["ReactiveObjC"],
-            path: "ReactiveObjc_Swift"
+            path: "ReactiveObjc_Swift",
+            publicHeadersPath: "include"
         )
     ],
     swiftLanguageVersions: [.version("5")]
