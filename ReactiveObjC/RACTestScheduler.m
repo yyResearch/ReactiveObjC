@@ -137,7 +137,7 @@ static void RACReleaseScheduledAction(CFAllocatorRef allocator, const void *ptr)
 	NSCParameterAssert(block != nil);
 
 	@synchronized (self) {
-		NSDate *uniqueDate = [NSDate dateWithTimeIntervalSinceReferenceDate:self.numberOfDirectlyScheduledBlocks];
+		NSDate *uniqueDate = [NSDate dateWithTimeIntervalSinceReferenceDate:(NSTimeInterval)self.numberOfDirectlyScheduledBlocks];
 		self.numberOfDirectlyScheduledBlocks++;
 
 		RACTestSchedulerAction *action = [[RACTestSchedulerAction alloc] initWithDate:uniqueDate block:block];
